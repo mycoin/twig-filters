@@ -1,0 +1,52 @@
+{
+  "name": "twig-filters",
+  "version": "0.0.1",
+  "description": "[twig] filters for takla",
+  "keywords": [
+    "twig",
+    "filters"
+  ],
+  "author": {
+    "name": "mycoin",
+    "email": "nqliujiangtao@gmail.com"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "lib/",
+    "package.json",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mycoin/twig-filters.git"
+  },
+  "peerDependencies": {
+    "twig": "1.13.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.1",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.2",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.1.3",
+    "eslint-loader": "^1.7.1",
+    "mocha": "^3.1.2",
+    "mocha-better-spec-reporter": "^3.0.2"
+  },
+  "engines": {
+    "node": ">6.4.0"
+  },
+  "scripts": {
+    "dev": "babel src --watch --copy-files --out-dir lib",
+    "build": "babel src --copy-files --out-dir lib",
+    "test": "mocha -r babel-register -t 5000 -R mocha-better-spec-reporter --recursive --check-leaks tests"
+  }
+}

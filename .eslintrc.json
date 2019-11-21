@@ -1,0 +1,30 @@
+{
+  "env": {
+    "browser": true
+  },
+  "root": true,
+  "extends": "airbnb-base",
+  "rules": {
+    "semi": [
+      "error",
+      "never"
+    ],
+    "prefer-template": "warn",
+    "no-bitwise": "warn",
+    "no-mixed-operators": "warn",
+    "max-len": [
+      "error",
+      {
+        "code": 140
+      }
+    ],
+    "no-multi-spaces": [
+      "error",
+      {
+        "exceptions": {
+          "ImportDeclaration": true
+        }
+      }
+    ]
+  }
+}
